@@ -37,9 +37,9 @@ L76K GPS Module Information : https://www.seeedstudio.com/L76K-GNSS-Module-for-S
 #define BUTTON_NEED_PULLUP
 
 // Battery level
-#define BATTERY_PIN 4 // A battery voltage measurement pin, voltage divider connected here to measure battery voltage
-#define ADC_CHANNEL ADC1_GPIO4_CHANNEL
-#define ADC_MULTIPLIER 2.0 /// ratio of voltage divider (R1=200k, R2=200k = 2.0)
+#define BATTERY_PIN 1 // A battery voltage measurement pin, voltage divider connected here to measure battery voltage
+#define ADC_CHANNEL ADC1_GPIO1_CHANNEL
+#define ADC_MULTIPLIER 2.0 /// ratio of voltage divider (R1=200k, R2=200k)
 #define BATTERY_SENSE_RESOLUTION_BITS 12
 
 /*Warning:
@@ -47,6 +47,8 @@ L76K GPS Module Information : https://www.seeedstudio.com/L76K-GNSS-Module-for-S
     L76K Expansion Board can not directly used, L76K Reset Pin needs to override or physically remove it,
     otherwise it will conflict with the SPI pins
 */
+/* DISABLED DUE TO BEING UNUSED ON ROUTER...
+
 #define GPS_L76K
 #ifdef GPS_L76K
 #define GPS_RX_PIN 44
@@ -64,6 +66,9 @@ L76K GPS Module Information : https://www.seeedstudio.com/L76K-GNSS-Module-for-S
 
 #define I2C_SDA 5
 #define I2C_SCL 6
+
+...END OF DISABLED PINS
+*/
 
 // XIAO S3 LORA module
 #define USE_SX1262
