@@ -70,6 +70,7 @@ L76K GPS Module Information : https://www.seeedstudio.com/L76K-GNSS-Module-for-S
 
 ...END OF DISABLED */
 
+
 // XIAO S3 LORA module
 #define USE_SX1262
 

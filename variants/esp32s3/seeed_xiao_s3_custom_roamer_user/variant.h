@@ -70,12 +70,6 @@ L76K GPS Module Information : https://www.seeedstudio.com/L76K-GNSS-Module-for-S
 
 ...END OF DISABLED */
 
-// XIAO S3 Expansion board  has 1.3 inch OLED Screen
-#define USCREEN_SSD1306
-
-#define I2C_SDA 5
-#define I2C_SCL 6
-
 
 // XIAO S3 LORA module
 #define USE_SX1262
