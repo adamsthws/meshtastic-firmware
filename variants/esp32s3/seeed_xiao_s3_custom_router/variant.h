@@ -47,7 +47,8 @@ L76K GPS Module Information : https://www.seeedstudio.com/L76K-GNSS-Module-for-S
     L76K Expansion Board can not directly used, L76K Reset Pin needs to override or physically remove it,
     otherwise it will conflict with the SPI pins
 */
-/* DISABLED DUE TO BEING UNUSED ON ROUTER...
+
+/* DISABLED...
 
 #define GPS_L76K
 #ifdef GPS_L76K
@@ -67,8 +68,7 @@ L76K GPS Module Information : https://www.seeedstudio.com/L76K-GNSS-Module-for-S
 #define I2C_SDA 5
 #define I2C_SCL 6
 
-...END OF DISABLED PINS
-*/
+...END OF DISABLED */
 
 // XIAO S3 LORA module
 #define USE_SX1262
